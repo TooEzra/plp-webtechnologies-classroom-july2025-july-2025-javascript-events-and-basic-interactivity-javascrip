@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Form</h1>
+        <button id="toggleMode">Toggle Dark Mode</button>
+        <div id="faqSection" class="faq">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <h3>How to submit?</h3>
+                <p id="faqContent" style="display: none;">Fill the form and click submit.</p>
+            </div>
+        </div>
+        <form id="userForm">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <span id="nameError" class="error"></span>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <span id="emailError" class="error"></span>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <span id="passwordError" class="error"></span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="message" class="success"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
